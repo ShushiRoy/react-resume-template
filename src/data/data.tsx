@@ -5,14 +5,13 @@ import {
   CalendarIcon,
   FlagIcon,
   MapIcon,
-  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -44,7 +43,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
+  title: 'Shushital Roy',
   description: "Example site built with Tim Baker's react resume template",
 };
 
@@ -69,18 +68,13 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Shushital Roy`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I'm a Toronto based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Levio Inc.</strong> I specializing in consulting to drive clients' business objectives.
+        I'm open and eager to connect with new individuals to explore collaborative opportunities in the tech realm.
       </p>
     </>
   ),
@@ -104,16 +98,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `As a seasoned consultant with over three years of experience, I bring a robust skill set encompassing 
+  Python, Java, C#, ASP.Net, and Angular. Backed by an Azure Fundamentals Certification and 
+  proficient in SQL, I specialize in delivering tailored solutions that seamlessly integrate technology to meet diverse business needs.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Toronto, ON', Icon: MapIcon },
+    { label: 'Age', text: '25', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Canadian', Icon: FlagIcon },
+    { label: 'Study', text: 'University of Ottawa', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Levio Inc.', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -268,39 +261,102 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'April 2021',
+    location: 'University of Ottawa',
+    title: 'BASc. in Computer Engineering',
+    content: <p>Built fundamental engineering skills and delves into various facets of computer software and hardware.
+      Specialized in  areas like microprocessor-based systems, computer architecture, programming, real-time operating systems, software engineering, and robotics.
+    </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'May 2021 - Present',
+    location: 'Levio Inc.',
+    title: 'Software Developer',
+    content: (
+      <ul>
+        <li>
+          Led successful migration of healthcare data from GoldCare to AlayaCare,
+          employing Python Jupyter Notebooks on AWS Sagemaker to preprocess and transform
+          data formats into AlayaCare specifications, enhancing compatibility and integrity of transferred datasets
+        </li><br></br>
+        <li>
+          Developed automated PDF generation system for client records, utilizing XML parsing techniques to extract and
+          segment relevant data, culminating in the creation of standardized PDF documents tailored to individual
+          patient needs, streamlining documentation processes and improving efficiency
+        </li><br></br>
+        <li>
+          Spearheaded successful migration of data from WordPress to BigCommerce, leveraging C# and BigCommerce API integration to
+          seamlessly transfer customer records, product information, and past order history, ensuring continuity and accuracy in the new Ecommerce environment
+        </li><br></br>
+        <li>
+          Conducted comprehensive quality assurance testing on the BigCommerce website, meticulously validating feature functionalities and assessing user experience
+          to identify and rectify any potential issues, ensuring optimal performance and smooth navigation for end‑users
+        </li><br></br>
+        <li>
+          Built a comprehensive Child‑Spousal Divorce calculator using Angular which calculated values based on various factors such as the customer's province, current earnings,
+          ownership of businesses, and assets like jewelry
+        </li><br></br>
+        <li>
+          Developed a custom Outlook 365 plug‑in using C# to address client concerns regarding the confidentiality of emails using POST requests that allowed emails to be filed into the IBM Lotus Notes Database
+        </li><br></br>
+        <li>
+          Engineered new and customized features for client projects, while leveraging C# to improve the versatility of the user experience
+        </li><br />
+        <li>
+          Contributed to the enhancement and bug resolution of a payment banking system built with ASP.Net
+        </li><br />
+        <li>
+          Utilized AWS S3 buckets to store registration files and utilized CloudWatch for detailed log analysis, ensuring timely issue resolution and improving overall client satisfaction
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: 'June 2020 - September 2020',
+    location: 'Real Decoy',
+    title: 'Web Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        <ul>
+          <li>
+            Customized and implemented new features for client projects using PHP and JavaScript
+          </li><br />
+          <li>
+            Addressed issues such as improving search functionality to include special characters and developing SQL queries to generate comprehensive reports for customers
+          </li><br />
+          <li>
+            Utilized project tracking tools, including JIRA, to effectively manage and prioritize ongoing bugs and issues reported by clients
+          </li><br />
+          <li>
+            Developed numerous test cases, including verifying the correct parameter passing when adding new products to the inventory system
+          </li><br />
+        </ul>
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2019 - December 2019',
+    location: 'Blackberry Ltd.',
+    title: 'Software Tester',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        <ul>
+          <li>
+            Conducted extensive testing on a custom Blackberry application, utilizing various techniques such as
+            desyncing the application from the database and introducing changes to assess the resilience and identify potential errors
+          </li><br />
+          <li>
+            Provided detailed step‑by‑step descriptions of actions leading to critical errors, including capturing and forwarding error logs for prompt resolution,
+            which helped prevent the release of bugs to clients
+          </li><br />
+          <li>
+            Shared comprehensive reports on bug completion status to team members, clients, and higher management, which enabled stakeholders to make informed decisions
+            on project timelines and extensions
+          </li>
+        </ul>
       </p>
     ),
   },
@@ -336,27 +392,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'If you have an interesting project, or just want to say hi, feel free to reach out.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'info@shushitalroy.ca',
+      href: 'mailto: info@shushitalroy.ca',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Toronto ON, Canada',
+      href: 'https://maps.app.goo.gl/Tik8dEXtno8JQf7P7',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ShushiRoy',
+      href: 'https://github.com/ShushiRoy',
     },
   ],
 };
@@ -365,9 +416,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/ShushiRoy' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/shushitalroy/' }
 ];
